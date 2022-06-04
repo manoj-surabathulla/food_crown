@@ -25,12 +25,14 @@
 
     .dish_parent{
         margin-top: 4.4rem;
+        display: block;
     }
 
     .indiandish_parent {
         width: 100%;
     }
     .menucards_parent {
-        display: none;
+        display: block;
+        width: 100%;
     }
 }

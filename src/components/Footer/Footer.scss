@@ -83,7 +83,17 @@
 @media only screen and (max-width:400px) {
 
     .footer-parent {
-       display: none;
+       display: flex;
+    }
+
+    .footer_main {
+        display: none;
+    }
+
+    .footer {
+        &_copyright {
+            padding-top: 5px;
+        }
     }
 
 }
