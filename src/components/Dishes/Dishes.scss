@@ -1,0 +1,36 @@
+.container {
+    max-width: 111.15rem;
+    margin: 0 auto;
+}
+
+.dish_parent {
+    margin-top: 7.4rem;
+    display: flex;
+}
+
+.indiandish_parent {
+    width: 30%;
+}
+
+.menucards_parent {
+    width: 70%;
+}
+
+
+@media only screen and (max-width:400px) {
+
+    .container {
+        margin: 0px 40px;
+    }
+
+    .dish_parent{
+        margin-top: 4.4rem;
+    }
+
+    .indiandish_parent {
+        width: 100%;
+    }
+    .menucards_parent {
+        display: none;
+    }
+}

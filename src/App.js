@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
+import DeliveryPage from './pages/DeliveryTab';
+// import {useDispatch} from 'react-redux'
+// import { login } from './store/user';
 
 function App() {
+
+  // const dispatch = useDispatch()
+
+  // useEffect = (() => {
+  //   dispatch(login())
+  //   console.log('login', login)
+  // })
+  // console.log('login', login)
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      {/* <h1 onClick={()=> dispatch(login({username: 'Thamu', password: '1234'}))}>Hello</h1> */}
+      <DeliveryPage />
     </div>
   );
 }

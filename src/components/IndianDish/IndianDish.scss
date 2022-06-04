@@ -1,0 +1,119 @@
+.indiandish_header {
+
+    &_title {
+        color: #29282B;
+        font-family: Poppins;
+        font-size: 36px;
+        font-weight: 600;
+        letter-spacing: 1.13px;
+        line-height: 36px;
+    }
+
+    &_subtitle {
+        opacity: 0.5;
+        color: #212C3A;
+        font-family: Poppins;
+        font-size: 12px;
+        letter-spacing: 0.38px;
+        line-height: 18px;
+    }
+
+    &_card {
+        margin-top: 2rem;
+        width: 80%;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem 4rem;
+
+        &_container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        &_producttitle {
+            opacity: 0.5;
+            color: #212C3A;
+            font-family: Poppins;
+            font-size: 14px;
+            letter-spacing: 0.44px;
+            line-height: 21px;
+            margin-top: 1.5rem;
+        }
+    }
+
+    &_view {
+        margin: 2rem 0rem 2rem 0rem;
+    }
+
+    &_viewBtn {
+        width: 80%;
+        padding: 1.5rem 2rem;
+        border-radius: 5px;
+        background-color: #FE3040;
+        color: #FFFFFF;
+        font-family: Poppins;
+        font-size: 16px;
+        font-weight: 500;
+        letter-spacing: 0.5px;
+        line-height: 16px;
+        text-align: center;
+        border: none;
+    }
+
+    &_btns {
+        width: 80%;
+
+        &_container {
+            margin-top: 20px;
+            border-top: 1px solid #979797;
+            padding-top: 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: .8rem;
+        }
+
+        &_btntitle {
+            :hover {
+                background-color: #29282B;
+                color: #FFFFFF;
+            }
+        }
+
+        &_Up {
+            font-family: Poppins;
+            font-size: 14px;
+            letter-spacing: 0.44px;
+            line-height: 21px;
+            padding: 1rem 1.5rem;
+            border-radius: 25px;
+            border: none;
+            cursor: pointer;
+            width: 100%;
+        }
+    }
+}
+
+
+@media only screen and (max-width:400px) {
+
+    .indiandish_header {
+        &_card {
+            display: flex;
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        &_viewBtn {
+            width: 100%;
+        }
+
+        &_btns {
+            width: 100%;
+
+        }
+    }
+
+}

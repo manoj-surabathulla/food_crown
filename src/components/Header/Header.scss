@@ -1,0 +1,130 @@
+.header {
+    display: flex;
+    // justify-content: space-between;
+    align-items: center;
+    margin: 2rem 0rem;
+
+    &_container {
+        display: flex;
+    }
+
+    &_nav {
+        width: 30%;
+    }
+
+    &_menu {
+        width: 15%;
+        margin-right: 1rem;
+    }
+
+    &_lists {
+        display: flex;
+
+        &_items {
+            margin-right: 1.5rem;
+
+            a {
+                font-family: Poppins;
+                font-size: 16px;
+                font-weight: 600;
+                letter-spacing: -0.25px;
+                line-height: 22px;
+                text-decoration: none;
+                color: #29282B;
+                margin-bottom: 2.4rem;
+            }
+
+            :hover {
+                color: #FE3040;
+                border-bottom: 1rem solid #FE3040;
+            }
+        }
+    }
+
+    &_subcontainer {
+        display: flex;
+        align-items: center;
+        width: 80%;
+        justify-content: space-between;
+    }
+
+    &_logo {
+        color: #29282B;
+        font-family: Poppins;
+        font-size: 22px;
+        font-weight: 600;
+        letter-spacing: -0.35px;
+        line-height: 22px;
+    }
+
+    &_btn {
+        display: flex;
+
+        &_loginBtn {
+            color: #29282B;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            line-height: 25px;
+            border: none;
+            outline: none;
+            padding: 1rem 2rem;
+        }
+
+        &_signupBtn {
+            border-radius: 5px;
+            background-color: #FE3040;
+            border: none;
+            padding: 0rem 1.5rem;
+            color: #ffffff;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            letter-spacing: 0.5px;
+            line-height: 25px;
+        }
+    }
+}
+
+
+@media only screen and (max-width:400px) {
+
+    .header {
+        display: flex;
+
+        &_container {
+            width: 10%;
+        }
+
+        &_nav {
+            width: 100%;
+        }
+
+        &_menu {
+            width: 60%;
+        }
+
+        &_lists {
+            display: none;
+        }
+
+        &_subcontainer {
+            width: 90%;
+        }
+
+        &_logo {
+            font-size: 15px;
+        }
+
+        &_btn {
+            width: 56%;
+            &_signupBtn {
+                padding: 0.1rem 0.6rem;
+                font-size: 13px;
+            }
+        }
+
+    }
+
+}
