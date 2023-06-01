@@ -1,18 +1,24 @@
-import React from 'react'
+import React, { useState } from 'react'
 import menu from '../../assets/img/menu.svg';
 import './Header.scss'
 
 const HeaderNav = () => {
+    const [isOpen, setIsOpen] = useState(false)
+
+    const menuHandler = () => {
+        console.log('clicked')
+        setIsOpen(!isOpen)
+    }
     return (
         <>
             <main className='container'>
                 <section className='header'>
                     <div className='header_container' >
                         <div className='header_nav'>
-                            <img className='header_menu' src={menu} alt='menu' />
+                            <img className='header_menu' src={menu} alt='menu' onClick={menuHandler} />
                         </div>
-                        <div>
-                            <ul className='header_lists'>
+                        {/* <div> */}
+                            <ul className={`header_lists ${isOpen ? 'header_lists_active' : ''} `}>
                                 <li className='header_lists_items'>
                                     <a href='https://www.google.com'>Delivery</a>
                                 </li>
@@ -20,7 +26,7 @@ const HeaderNav = () => {
                                     <a href='https://www.google.com'>Pick Up</a>
                                 </li>
                             </ul>
-                        </div>
+                        {/* </div> */}
                     </div>
                     <div className='header_subcontainer'>
                         <div>

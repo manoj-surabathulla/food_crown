@@ -21,7 +21,7 @@
         display: flex;
 
         &_items {
-            margin-right: 1.5rem;
+            margin-right: 2.5rem;
 
             a {
                 font-family: Poppins;
@@ -107,6 +107,10 @@
 
         &_lists {
             display: none;
+
+            &_active {
+                display: block;
+            }
         }
 
         &_subcontainer {

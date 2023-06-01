@@ -156,8 +156,19 @@
     .menucards_main {
         grid-template-columns: 1fr;
         gap: 30px;
-        // display: flex;
+        margin-top: 30px;
+
+        &_viewBtn {
+            width: 100%;
+        }
+    }
+}
+@media only screen and (max-width:500px) {
+    .menucards_main {
+        // grid-template-columns: 1fr;
+        // gap: 30px;
         // overflow: auto;
+        // display: none;
         margin-top: 30px;
 
         &_viewBtn {

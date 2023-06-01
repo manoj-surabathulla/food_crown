@@ -1,6 +1,7 @@
 import React from 'react'
 import { DishBtns, Dishes } from './mock'
 import './IndianDish.scss'
+import DishesComponent from '../../common/Dishes/DishesComponent'
 
 const IndianDish = () => {
   return (
@@ -11,10 +12,7 @@ const IndianDish = () => {
       </div>
       <div className='indiandish_header_card'>
         {Dishes?.map((item, i) => (
-          <div className='indiandish_header_card_container'>
-            <img className='indiandish_header_card_img' src={item?.images} alt={item?.title} />
-            <p className='indiandish_header_card_producttitle'>{item?.title}</p>
-          </div>
+          <DishesComponent item={item} />
         ))}
       </div>
       <div className='indiandish_header_view'>
